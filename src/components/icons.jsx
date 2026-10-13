@@ -1,0 +1,11 @@
+const S=p=>({width:20,height:20,viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:1.8,strokeLinecap:'round',strokeLinejoin:'round','aria-hidden':true,...p});
+export const Arrow=()=><svg {...S({className:'ic-arrow'})}><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
+export const Phone=()=><svg {...S({className:'ic-phone'})}><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>;
+export const Calendar=()=><svg {...S()}><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>;
+export const Pin=()=><svg {...S()}><path d="M12 21s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.500"/></svg>;
+export const Send=()=><svg {...S()}><path d="M21 3L3 11l7 3 3 7z"/></svg>;
+export const WhatsApp=()=><svg {...S({className:'ic-wa',fill:'currentColor',stroke:'none'})}><path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm0 18.200a8.200 8.200 0 01-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1112 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.100-.6.800-.8 1-.3.200-.6.100a6.700 6.700 0 01-3.300-2.900c-.2-.4.200-.4.700-1.300a.5.500 0 000-.5l-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.300 3 3 0 00-.9 2.200 5.200 5.200 0 001.100 2.800 11.900 11.900 0 004.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 001.800-1.300 2.200 2.200 0 00.2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg>;
+export const Staff=()=><svg {...S({width:34,height:34})}><circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M16 5a3 3 0 010 6M18 14c2 .8 3 2.700 3 6"/></svg>;
+export const Shield=()=><svg {...S({width:34,height:34})}><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg>;
+export const Gem=()=><svg {...S({width:34,height:34})}><path d="M6 4h12l3 5-9 11L3 9z"/><path d="M3 9h18"/></svg>;
+export const Tag=()=><svg {...S({width:34,height:34})}><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.500" cy="8.500" r="1.200"/></svg>;

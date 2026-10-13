@@ -1,0 +1,2 @@
+import AnimatedButton from '../components/AnimatedButton.jsx';import {usePageMeta} from '../lib/useReveal.js';
+export default function NotFound(){usePageMeta('Page not found | Anushka Beauty Parlour','Page not found');return <section><div className="wrap center"><h1>Page not found</h1><p className="sub">The page you are looking for does not exist.</p><AnimatedButton to="/">Back to home</AnimatedButton></div></section>}
