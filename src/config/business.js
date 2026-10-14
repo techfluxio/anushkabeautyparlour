@@ -8,7 +8,7 @@ export const BUSINESS = {
   instagram: import.meta.env.VITE_INSTAGRAM || '',
   facebook: import.meta.env.VITE_FACEBOOK || '',
   // Exact shop location (Google Maps share link). Works even if VITE_MAPS_URL is not set.
-  mapsShareUrl: import.meta.env.VITE_MAPS_URL || 'https://maps.app.goo.gl/UiC4kfqsmGgyPCPA9',
+  mapsShareUrl: import.meta.env.VITE_MAPS_URL || 'https://maps.app.goo.gl/eBmmVvarbWA1Lhno6',
   bookingEndpoint: import.meta.env.VITE_BOOKING_ENDPOINT || '' // Apps Script /exec URL
 };
 
@@ -24,7 +24,7 @@ export const waUrl = (t) => (BUSINESS.whatsapp ? `https://wa.me/${BUSINESS.whats
 
 /* Opens the exact pin. If the share link is empty, falls back to the same coordinates. */
 export const mapsUrl = () =>
-  BUSINESS.mapsShareUrl || 'https://www.google.com/maps/search/?api=1&query=25.720533,85.978405';
+  BUSINESS.mapsShareUrl || 'https://maps.app.goo.gl/eBmmVvarbWA1Lhno6';
 
 export const SERVICES = [
   {name: 'Bridal Makeup', img: 'bridal'}, {name: 'Party Makeup', img: 'party'}, {name: 'Hair Care & Styling', img: 'hair'},
