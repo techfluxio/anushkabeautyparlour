@@ -7,11 +7,25 @@ export const BUSINESS = {
   whatsapp: import.meta.env.VITE_WHATSAPP || '',    // digits with country code
   instagram: import.meta.env.VITE_INSTAGRAM || '',
   facebook: import.meta.env.VITE_FACEBOOK || '',
+  // Exact shop location (Google Maps share link). Works even if VITE_MAPS_URL is not set.
+  mapsShareUrl: import.meta.env.VITE_MAPS_URL || 'https://maps.app.goo.gl/UiC4kfqsmGgyPCPA9',
   bookingEndpoint: import.meta.env.VITE_BOOKING_ENDPOINT || '' // Apps Script /exec URL
 };
+
+/* Emojis written as Unicode codes so they never turn into the replacement character */
+export const E = {
+  flower: '\u{1F338}', sparkle: '\u2728', pray: '\u{1F64F}',
+  person: '\u{1F464}', phone: '\u{1F4F1}', lipstick: '\u{1F484}',
+  calendar: '\u{1F4C5}', clock: '\u23F0', memo: '\u{1F4DD}'
+};
+
 export const telUrl = () => (BUSINESS.phone ? 'tel:' + BUSINESS.phone : '');
 export const waUrl = (t) => (BUSINESS.whatsapp ? `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(t)}` : '');
-export const mapsUrl = () => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(`${BUSINESS.name}, ${BUSINESS.street}, ${BUSINESS.city}, ${BUSINESS.state}, ${BUSINESS.country}`);
+
+/* Opens the exact pin. If the share link is empty, falls back to the same coordinates. */
+export const mapsUrl = () =>
+  BUSINESS.mapsShareUrl || 'https://www.google.com/maps/search/?api=1&query=25.720533,85.978405';
+
 export const SERVICES = [
   {name: 'Bridal Makeup', img: 'bridal'}, {name: 'Party Makeup', img: 'party'}, {name: 'Hair Care & Styling', img: 'hair'},
   {name: 'Facial & Skin Care', img: 'facial'}, {name: 'Mehndi Designs', img: 'mehndi'}
