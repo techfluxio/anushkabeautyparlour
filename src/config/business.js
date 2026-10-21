@@ -1,7 +1,13 @@
 /* CENTRAL BUSINESS CONFIG - edit here (or use VITE_ env vars). Nothing here is secret. */
 export const BUSINESS = {
   name: 'Anushka Beauty Parlour & Shringar Mahal',
-  street: 'Main Road, Bibhutipur', city: 'Samastipur', state: 'Bihar', country: 'India',
+  // ---- CHANGE THE SHOP ADDRESS HERE ----
+  street: 'Block Road, Near SBI CSP Kapan, Bibhutipur',
+  city: 'Samastipur',
+  pin: '848236',
+  state: 'Bihar',
+  country: 'India',
+  // --------------------------------------
   days: 'Monday \u2013 Sunday', time: '9:00 AM \u2013 8:00 PM',
   phone: import.meta.env.VITE_PHONE || '',          // e.g. +919XXXXXXXXX
   whatsapp: import.meta.env.VITE_WHATSAPP || '',    // digits with country code
@@ -22,7 +28,7 @@ export const E = {
 export const telUrl = () => (BUSINESS.phone ? 'tel:' + BUSINESS.phone : '');
 export const waUrl = (t) => (BUSINESS.whatsapp ? `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(t)}` : '');
 
-/* Opens the exact pin. If the share link is empty, falls back to the same coordinates. */
+/* Opens the exact shop location from the share link above. */
 export const mapsUrl = () =>
   BUSINESS.mapsShareUrl || 'https://maps.app.goo.gl/eBmmVvarbWA1Lhno6';
 

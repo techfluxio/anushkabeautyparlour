@@ -1,0 +1,2 @@
+# Notice board lines. One notice per line. Lines starting with # are ignored.
+अनुष्का ब्यूटी पार्लर एवं श्रृंगार महल: शादी, सगाई, हल्दी, मेहंदी, संगीत, रिसेप्शन, जन्मदिन, सालगिरह और हर ख़ास मौक़े के लिए आज ही कॉल करें 👰
