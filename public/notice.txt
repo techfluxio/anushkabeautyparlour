@@ -1,2 +1,3 @@
 # Notice board lines. One notice per line. Lines starting with # are ignored.
-अनुष्का ब्यूटी पार्लर एवं श्रृंगार महल: शादी, सगाई, हल्दी, मेहंदी, संगीत, रिसेप्शन, जन्मदिन, सालगिरह और हर ख़ास मौक़े के लिए आज ही कॉल करें।
+NOTICE: Bridal Makeup, Party Makeup, Mehendi, Hair Styling, Beauty Services, Shringar Products & Sewing Services Available at Anushka Beauty Parlour & Shringar Mahal. Visit Us Today!
+सूचना: ब्राइडल मेकअप, पार्टी मेकअप, मेहंदी, हेयर स्टाइलिंग, ब्यूटी सेवाएं, श्रृंगार का सामान एवं सिलाई की सुविधा उपलब्ध है। आज ही पधारें!
